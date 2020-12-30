@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://minh:123@cluster0.7zlip.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jsonSecret":"embemy"
+}

@@ -1,0 +1,24 @@
+Learning:
+1) mongoose.connect will return a Promise
+2) Normally every basic API resource contains of two parts:
+-   a controller which handles the different request types(POST, GET, PUT, DELETE)
+-   the actual resource that takes care of the CRUD operations
+3) Why use body-parser :  
+-   http sends your form data in bits and pieces which are intended to get assembled as they reach their destination. So how would you extract your data.
+-   body-parser parses your request and converts it into a format from which you can easily extract relevant information that you may need.
+So basically, body-parser parsed your incoming request, assembled the chunks containing your form data, then created this body object for you and filled it with your form data.
+4) app.post and get return Promise
+-   example: app.post().then(data=>res.json(data))
+5) JSON WEB TOKEN
+-   Authentication: When user logged in and then make requests which contain JWT. This will allow user access in urls, service and resource. 
+=> This method is not affected by Cross-origin-Resource Sharing(Cors) because it does not use Cookie
+- What is Cors ? Cors is the method that allow another domain being able to query  (fonts, Javascript, v.v…) of website
+
+6) DB FindOne() and find() method will return Promise
+Packages
+1) config : create a global variable used for the whole app ( create default.json and add variable into it, when use require('config') it will use the variable which you declare in default.json)
+(to use it: 
+- create a variable mongoURI in file default.json in config folder
+- const db = config.get("mongoURI"); 
+
+)
