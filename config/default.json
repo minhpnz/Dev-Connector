@@ -1,4 +1,6 @@
 {
     "mongoURI":"mongodb+srv://minh:123@cluster0.7zlip.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    "jsonSecret":"embemy"
+    "jsonSecret":"embemy",
+    "githubClientId":"57ac46bef63999b63a89",
+    "githubSecret":"07c8a88e50745278898dab5211c46c273da1c185"
 }
