@@ -3,7 +3,7 @@ const router = express.Router();
 // @route GET api/auth
 // @desc Test route
 // @access Public
-router.get("/", (res, req) => {
+router.get("/", (req, res) => {
   res.send("post route");
 });
 

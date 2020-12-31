@@ -15,10 +15,22 @@ So basically, body-parser parsed your incoming request, assembled the chunks con
 - What is Cors ? Cors is the method that allow another domain being able to query  (fonts, Javascript, v.v…) of website
 
 6) DB FindOne() and find() method will return Promise
+7) Middleware is function which is access to request and respond and it has a "next" CALLBACK 
 Packages
-1) config : create a global variable used for the whole app ( create default.json and add variable into it, when use require('config') it will use the variable which you declare in default.json)
+8) Resful API is stateless (no data) ( Server does not save client data and when Client and server stop contact, there no connection from them)
+   - Stateful is about server having the data (server can save data of user in Session)
+   - Session is saved on server , a session start when client send request to server
+   - Cookie is saved on your browser. When use going into page, the browser will send the cookie contain your information( last use,or slt...) to the server
+   - How the server know that session is your session. Basically, the cookie will contain the session which is corresponding with that user So that need to compare cookie that client send to server and session in server
+9) config : create a global variable used for the whole app ( create default.json and add variable into it, when use require('config') it will use the variable which you declare in default.json)
 (to use it: 
 - create a variable mongoURI in file default.json in config folder
 - const db = config.get("mongoURI"); 
 
 )
+10) trim() remove white space from string
+11) When use any method about database( find, .... ) you need to use async await
+12) save() method use on instance Ex: Profile.save() => profile.save()
+13) - array.push will to the end of array
+    - array.unshift will push to the first of array
+14) After update delete remember to db.save()
